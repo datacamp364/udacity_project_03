@@ -5,11 +5,6 @@ WORKDIR /usr/src/app
 # A wildcard is used to ensure both package.json AND package-lock.json are copied where available (npm@5+)
 COPY package*.json ./
 
-ENV http_proxy http://127.0.0.1:3128
-ENV https_proxy http://127.0.0.1:3128
-ENV HTTP_PROXY http://127.0.0.1:3128
-ENV HTTPS_PROXY http://127.0.0.1:3128
-
 # RUN npm config set https-proxy http://localhost:3128/
 # RUN npm config set proxy http://localhost:3128/
 
